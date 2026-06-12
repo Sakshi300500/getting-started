@@ -14,7 +14,7 @@ COPY app/src ./src
 # Run tests to validate app
 FROM app-base AS test
 COPY .yarnrc.yml .
-RUN yarn install
+RUN yarn install --immutable
 RUN yarn test
 
 # Clear out the node_modules and create the zip
