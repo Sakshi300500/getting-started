@@ -1,2 +1,12 @@
-node_modules
-app/Dockerfile
+# Helm packages
+*.tgz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
